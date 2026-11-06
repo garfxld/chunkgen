@@ -29,7 +29,7 @@ This crate requires a nightly toolchain, since it uses `portable_simd` and sever
 
 ```toml
 [dependencies]
-chunkgen = "0.1.3"
+chunkgen = "0.2.0"
 ```
 
 
