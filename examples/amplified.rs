@@ -1,4 +1,4 @@
-use worldgen_rs::{AmplifiedPreset, WorldgenBuilder};
+use chunkgen::{AmplifiedPreset, WorldgenBuilder};
 
 #[path = "common/example.rs"]
 mod example;

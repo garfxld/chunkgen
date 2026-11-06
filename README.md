@@ -1,4 +1,4 @@
-# worldgen-rs
+# chunkgen
 
 A Rust library for generating Minecraft worlds. It reads vanilla and custom datapacks, JIT-compiles their density functions, and generates chunks that match vanilla's output.
 
@@ -29,7 +29,7 @@ This crate requires a nightly toolchain, since it uses `portable_simd` and sever
 
 ```toml
 [dependencies]
-worldgen-rs = "0.1.3"
+chunkgen = "0.1.3"
 ```
 
 
@@ -37,7 +37,7 @@ worldgen-rs = "0.1.3"
 ## Usage
 
 ```rust
-use worldgen_rs::{ChunkPos, ChunkStatus, WorldgenBuilder};
+use chunkgen::{ChunkPos, ChunkStatus, WorldgenBuilder};
 
 let worldgen = WorldgenBuilder::new()
     .with_seed(42)
@@ -56,7 +56,7 @@ let top = worldgen
 To use a custom datapack, layer it over the built-in one:
 
 ```rust
-use worldgen_rs::{WorldgenBuilder, datapack::Datapack};
+use chunkgen::{WorldgenBuilder, datapack::Datapack};
 
 let datapack = Datapack::zip("Terralith.zip")
     .expect("failed to load Terralith datapack")

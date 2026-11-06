@@ -1,4 +1,4 @@
-use worldgen_rs::{DebugPreset, WorldgenBuilder};
+use chunkgen::{DebugPreset, WorldgenBuilder};
 
 #[path = "common/example.rs"]
 mod example;

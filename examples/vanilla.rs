@@ -1,4 +1,4 @@
-use worldgen_rs::WorldgenBuilder;
+use chunkgen::WorldgenBuilder;
 
 #[path = "common/example.rs"]
 mod example;

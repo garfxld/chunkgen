@@ -518,7 +518,7 @@ mod tests {
     fn tempdir() -> PathBuf {
         static COUNTER: AtomicU64 = AtomicU64::new(0);
         let dir = env::temp_dir().join(format!(
-            "worldgen-rs-dimension-test-{}-{}",
+            "chunkgen-dimension-test-{}-{}",
             process::id(),
             COUNTER.fetch_add(1, Ordering::Relaxed)
         ));

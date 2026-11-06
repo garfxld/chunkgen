@@ -1,4 +1,4 @@
-use worldgen_rs::{LargeBiomesPreset, WorldgenBuilder};
+use chunkgen::{LargeBiomesPreset, WorldgenBuilder};
 
 #[path = "common/example.rs"]
 mod example;

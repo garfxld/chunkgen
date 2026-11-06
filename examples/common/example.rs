@@ -1,3 +1,4 @@
+use chunkgen::{ChunkPos, ChunkStatus, Worldgen};
 use shulkr::Server;
 use shulkr::auth::AuthMode;
 use shulkr::command::arg::Arg;
@@ -10,7 +11,6 @@ use shulkr::event::player::{
 };
 use shulkr::world::chunk::Chunk;
 use shulkr::world::{DimensionType, World};
-use worldgen_rs::{ChunkPos, ChunkStatus, Worldgen};
 
 const DEFAULT_FLYING_SPEED: f32 = 0.05;
 const MIN_FLY_MULTIPLIER: f32 = 0.1;
@@ -20,7 +20,7 @@ pub fn init_tracing() {
     tracing_subscriber::fmt()
         .with_env_filter(
             tracing_subscriber::EnvFilter::try_from_default_env().unwrap_or_else(|_| {
-                "worldgen_rs=debug,cranelift_codegen=warn,cranelift_jit=warn,cranelift_frontend=warn,cranelift_module=warn,info"
+                "chunkgen=debug,cranelift_codegen=warn,cranelift_jit=warn,cranelift_frontend=warn,cranelift_module=warn,info"
                     .into()
             }),
         )

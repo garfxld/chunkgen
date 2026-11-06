@@ -1,9 +1,9 @@
 use std::env;
 use std::path::{Path, PathBuf};
 
+use chunkgen::WorldgenBuilder;
+use chunkgen::datapack::Datapack;
 use shulkr::util::Key;
-use worldgen_rs::WorldgenBuilder;
-use worldgen_rs::datapack::Datapack;
 
 #[path = "common/example.rs"]
 mod example;

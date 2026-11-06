@@ -1,7 +1,7 @@
 use std::env;
 
+use chunkgen::{SingleBiomePreset, WorldgenBuilder};
 use shulkr::util::Key;
-use worldgen_rs::{SingleBiomePreset, WorldgenBuilder};
 
 #[path = "common/example.rs"]
 mod example;

@@ -1,7 +1,7 @@
 use std::env;
 
+use chunkgen::{SuperflatPreset, WorldgenBuilder};
 use shulkr::util::Key;
-use worldgen_rs::{SuperflatPreset, WorldgenBuilder};
 
 #[path = "common/example.rs"]
 mod example;

@@ -234,7 +234,7 @@ impl TempDatapackDir {
         static COUNTER: AtomicU64 = AtomicU64::new(0);
 
         let unique = COUNTER.fetch_add(1, Ordering::Relaxed);
-        let dir = env::temp_dir().join(format!("worldgen-rs-datapack-{}-{unique}", process::id()));
+        let dir = env::temp_dir().join(format!("chunkgen-datapack-{}-{unique}", process::id()));
         fs::create_dir_all(&dir)?;
         Ok(Self(dir))
     }
